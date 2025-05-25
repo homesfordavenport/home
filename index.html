@@ -4,70 +4,187 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Homes for Davenport</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Oswald', sans-serif;
       background: #f9f9f9;
       color: #333;
       margin: 0;
-      padding: 2em;
+      padding: 0;
     }
+
     header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem 2rem;
+      background-color: #F0FAFF; /* Light teal */
+      border-bottom: 1px solid #ccc;
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .site-title {
+      font-size: 2rem;
+      line-height: 1.2;
+      color: #2a4d69;
       text-align: center;
     }
-    h1 {
-      color: #2c3e50;
-      margin-bottom: 0.25em;
+
+    .logo {
+      height: 70px;
+      max-width: 100%;
     }
+
     nav {
-      margin-top: 0.5em;
-      margin-bottom: 2em;
+      display: flex;
+      justify-content: center;
+      background-color: #E6F7FF; /* Light blue */
+      padding: 1rem 0;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
+
     nav a {
-      margin: 0 1em;
+      margin: 0 1.5rem;
       text-decoration: none;
-      color: #007acc;
+      color: #2a4d69;
+      font-weight: 600;
+      transition: color 0.3s ease;
     }
+
+    nav a:hover {
+      color: #005f99;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: #F0FAFF; /* Very light blue */
+    }
+
+    .hero img {
+      width: 750px;
+      height: 400px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .hero-content {
+      margin-top: 1rem;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      color: #2a4d69;
+      margin: 0;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #555;
+      margin: 0.5rem 0 0;
+    }
+
     section {
-      max-width: 700px;
-      margin: auto;
-      margin-bottom: 2em;
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 2rem 1rem;
+      background-color: #FFFFFF; /* White for sections */
     }
+
+    section h2 {
+      font-size: 2rem;
+      color: #2a4d69;
+      margin-bottom: 1rem;
+    }
+
+    section p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    #mission {
+      background-color: #FFF9F0; /* Light gray for mission section */
+    }
+
+    #strategy {
+      background-color: #FFF9F0; /* Very light green for strategy section */
+    }
+
+    #affordable-housing {
+      background-color: #FFF9F0; /* Very light orange for contact section */
+    }
+
+    #contact {
+      background-color: #FFF9F0; /* Very light orange for contact section */
+    }
+
+
+
     footer {
       text-align: center;
-      font-size: 0.8em;
+      font-size: 0.9rem;
       color: #777;
-      margin-top: 3em;
+      padding: 2rem 1rem;
+      background-color: #E6F7FF; /* Light blue */
+      border-top: 1px solid #ccc;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Homes for Davenport</h1>
-    <nav>
-      <a href="#mission">Mission</a>
-      <a href="#strategy">Strategy</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <div class="header-content">
+      <img src="logo.png" alt="Homes for Davenport logo" class="logo">
+      <div class="site-title">Homes for<br>Davenport</div>
+    </div>
   </header>
 
+  <nav>
+    <a href="#mission">Mission</a>
+    <a href="#strategy">Strategy</a>
+    <a href="#affordable-housing">Affordable Housing</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="hero">
+    <img src="image1.jpg" alt="Hero Image">
+    <div class="hero-content">
+      <h1>Welcome to Homes for Davenport</h1>
+      <p>Advocating for affordable housing in the Davenport neighborhood of Toronto.</p>
+    </div>
+  </div>
+
   <section id="mission">
-    <h2>Mission</h2>
-    <p>Our mission is to advocate for the construction of affordable housing in the Davenport neighborhood of Toronto.</p>
+    <h2>Our Mission</h2>
+    <p>Our mission is to advocate for the construction of affordable housing in <b>Davenport</b> and around Toronto, where everyone should have access to a safe and affordable home.</p>
   </section>
 
   <section id="strategy">
-    <h2>Strategy and Goals</h2>
-    <p>Coming soon.</p>
+    <h2>Our Strategy</h2>
+    <p>At <b>Homes for Davenport</b> we work with neighbors, local organizations, and policymakers to develop sustainable housing solutions. This work includes education about affordable housing and direct advocacy for specific projects in Davenport.</p>
+  </section>
+
+  <section id="affordable-housing">
+    <h2>Affordable Housing</h2>
+    <p></p><b>What is affordable housing?</b><br>Affordable housing is defined as housing that costs 30% of less of a household's before-tax income. About half of Toronto's renters spend above this amount, and would benefit from more affordable housing builds. 
+        <br><p></p><b>Who is responsible?<br></b>In Ontario, cities are responsible for providing affordable housing.</a>
+    <br><p></p><b>How can we help?</b><br>Engaging with stakeholders, especially neighbors, can lead to real effective change when it comes to affordable housing in Toronto and Davenport.</p>
   </section>
 
   <section id="contact">
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:homesfordavenport@example.com">homesfordavenport@example.com</a></p>
+    <p>If you have any questions or would like to find out how you can get involved in advocating for affordable housing in Toronto, you can reach us at <a href="mailto:contact@homesfordavenport.com">contact@homesfordavenport.com.</a></p>
   </section>
 
   <footer>
-    <p>&copy; 2025 Homes for Davenport</p>
+    <p>2025 Homes for Davenport</p>
   </footer>
 </body>
 </html>
